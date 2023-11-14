@@ -1,0 +1,117 @@
+[
+	{"mob": ["mozombies_wave:survivor", "mozombies_wave:notch", 	
+	"mozombies_wave:zombie_herobrine"],
+"result": "deny"
+
+	
+	},
+	{"mob": ["minecraft:villager"],
+	
+	"nbt": {Tags:["ww"]
+			},
+	
+"result": "allow"
+	},
+	
+
+	#sets the spawn of the river guardin
+	
+	{
+		"mob":["hostilewatermobs:riverguardian"],
+		"biome": "minecraft:river",
+		"result": "deny"
+	},
+	
+	#prevents mobs from dieing in sun
+  {
+	  "mob":["minecraft:zombie", "minecraft:husk", "mozombies_wave:zombie_chef", 
+	"mozombies_wave:disco_zombie", 
+	"mozombies_wave:zombie_king", "mozombies_wave:zombie_miner", 
+	"mozombies_wave:zombie_pirate", "mozombies_wave:zombie_creeper"],
+	  "random": 0.44,
+	"seesky": true,
+	"when": "finalize",
+    "result": "allow",
+    "speedmultiply": 1.269,
+	"armorhelmet": ["minecraft:leather_helmet"]
+	
+  },
+  {
+	  "mob":["minecraft:zombie", "minecraft:husk"],
+	 "random": 0.25,
+	"when": "finalize",
+    "result": "default",
+    "speedmultiply": 1.2,
+	"armorhelmet": ["immersive_armors:wooden_helmet"],
+	"armorchest": ["immersive_armors:wooden_chestplate"]
+	
+  },
+  {
+	"mob": ["mozombies_wave:zombie_dwarf", "mozombies_wave:zombie_pa", "mozombies_wave:zombie_cyborg"],
+	"random": 0.30,
+	"seesky": true,
+	"when": "finalize",
+    "result": "allow",
+	"speedadd": 0.03,
+	"armorhelmet": ["minecraft:leather_helmet"]
+  },
+  {
+	"mob": ["mozombies_wave:zombie_dwarf", "mozombies_wave:zombie_pa","mozombies_wave:zombie_cyborg"],
+	"random": 0.30,
+	"seesky": false,
+	"when": "finalize",
+    "result": "allow",
+	"speedadd": 0.03
+  },
+  {
+	  "mob":["minecraft:zombie", "minecraft:husk"],
+	 "random": 0.25,
+	"seesky": true,
+	"when": "finalize",
+    "result": "allow",
+	"healthadd": 5,
+    "speedmultiply": 1.2,
+	"armorhelmet": ["immersive_armors:warrior_helmet"],
+	"armorchest": ["immersive_armors:warrior_chestplate"],
+	"helditem": ["4=minecraft:iron_axe", "1=simplyswords:iron_greataxe"]
+	
+  },
+  {  	
+	"mob":["minecraft:zombie", "minecraft:husk"],
+	 "random": 0.16,
+	"seesky": true,
+	"when": "finalize",
+    "result": "allow",
+	"speedmultiply": 1.2,
+	"armorhelmet": ["immersive_armors:heavy_helmet"],
+	"armorchest": ["immersive_armors:heavy_chestplate"],
+	"armorlegs": ["immersive_armors:heavy_leggings"],
+	"armorboots": ["immersive_armors:heavy_boots"],
+	"helditem": ["simplyswords:iron_claymore"]
+  },
+   {
+    "mob": ["minecraft:skeleton", "minecraft:stray"],
+    "dimension": "minecraft:overworld",
+	"random": 0.4,
+	"when": "finalize",
+    "result": "allow",
+	"helditem": "minecraft:bow",
+	"armorhelmet": ["immersive_armors:bone_helmet"],
+	"armorchest": ["immersive_armors:bone_chestplate"],
+	"armorlegs": ["immersive_armors:bone_leggings"],
+	"armorboots": ["immersive_armors:bone_boots"]
+	
+  },
+  {
+    "mob": ["hostilewatermobs:slipperybiter"],
+    "dimension": "minecraft:overworld",
+    "biome": ["galosphere:crystal_canyons"],
+    "result": "default"
+  },
+  {
+    "mob": ["hostilewatermobs:slipperybiter"],
+    "dimension": "minecraft:overworld",
+	  "incontrol": true,
+	"result": "deny"
+  }
+ ]

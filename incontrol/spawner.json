@@ -1,0 +1,22 @@
+[
+ {
+    "mob": ["hostilewatermobs:slipperybiter"],
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 4,
+	   "groupdistance": 3
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inwater":true,
+	  "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 43,
+      "maxheight": 80,
+      "maxthis": 20
+    }
+  }
+ ]
